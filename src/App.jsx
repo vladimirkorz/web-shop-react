@@ -14,9 +14,6 @@ function App() {
 			<Search />
 			<PromotionalBanner />
 			<CategoryCards />
-			<div>
-				<p>sdsthrthe</p>
-			</div>
 			<div className="main-content"></div>
 		</div>
 	);

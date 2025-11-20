@@ -34,15 +34,27 @@ body {
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-around;
+	margin-bottom: 10px;
 }
 
 .CategoryCards {
 	display: flex;
-	overflow-x: auto;
+	overflow-x: min;
 	height: 100px;
+	background-color: rgb(187, 187, 187);
 }
 
-.CategoryCards > div {
+.Card {
 	max-height: 80px;
-	width: 66px;
+	min-width: 66px;
+	background-color: #7c7c7c;
+	margin-right: 5px;
+	font-size: 11px;
+	
+}
+
+.Card > img {
+	min-width: 66px;
+	min-height: 66px;
+	background-color: #333;
 }
