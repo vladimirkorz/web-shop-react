@@ -1,9 +1,9 @@
 function NavigationBar() {
 	return (
 		<div className="navigationBar">
-			<p>Х закрыть</p>
-			<p>наш телеграм</p>
-			<p>настройки</p>
+			<button>Х закрыть</button>
+			<button>наш телеграм</button>
+			<button>настройки</button>
 		</div>
 	);
 }
