@@ -1,3 +1,10 @@
+:root {
+	--bg: #F1F1F1;
+	--button-color: #C6C6C64D;
+	--card-color: #FFFFFF;
+	--text:#292928;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -8,8 +15,8 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
 		sans-serif;
 	line-height: 1.6;
-	color: #333;
-	background-color: #f5f5f5;
+	color: var(--text);
+	background-color: var(--bg);
 	padding: 5px;
 }
 
@@ -21,8 +28,9 @@ body {
 .Search {
 	width: 100%;
 	height: 39px;
-	background-color: bisque;
+	background-color: var(--card-color);
 	border-radius: 20px;
+	border-width: 0;
 }
 
 .PromotionalBanner {
@@ -39,15 +47,15 @@ body {
 
 .CategoryCards {
 	display: flex;
-	overflow-x: min;
+	overflow-x: auto;
 	height: 100px;
-	background-color: rgb(187, 187, 187);
+	background-color: var(--bg);
 }
 
 .Card {
 	max-height: 80px;
 	min-width: 66px;
-	background-color: #7c7c7c;
+	background-color: var(--card-color);
 	margin-right: 5px;
 	font-size: 11px;
 }
@@ -55,18 +63,36 @@ body {
 .Card > img {
 	min-width: 66px;
 	min-height: 66px;
-	background-color: #333;
+	background-color: #ffb0b0;
 }
 
 .Goods {
 	display: grid;
-	gap: 10px;
-	grid-template-columns: 169px 169px;
+	gap: 5px;
+	grid-template-columns: 173px 173px;
 }
 
 .Goods > div {
-	width: 169px;
+	width: 173px;
 	height: 268px;
-	background-color: aqua;
+	background-color: rgb(255, 248, 248);
 	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2px;
+}
+
+.Goods img {
+	height: 169px;
+	width: 169px;
+	border-radius: 20px;
+	background-color: #a5a5a5;
+}
+
+.Goods button {
+	width: 159px;
+	height: 34px;
+	color: var(--text);
+	margin: 5px;
 }
