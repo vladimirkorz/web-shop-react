@@ -20,9 +20,33 @@ body {
 	padding: 5px;
 }
 
+.StatusBar {
+	height: 55px;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+
+}
+
+.StatusBar div {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+
+}
+
+.StatusBar img {
+	max-height: 13px;
+}
+
 .navigationBar {
 	display: flex;
 	justify-content: space-between;
+}
+
+.navigationBar button {
+	height: 30px;
+	color: var(--text);
 }
 
 .Search {

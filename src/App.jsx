@@ -1,16 +1,16 @@
 import { useState } from "react";
 import Search from "./components/Search.jsx";
 import PromotionalBanner from "./components/PromotionalBanner.jsx";
-import MenuNavigation from "./components/MenuNavigator.jsx";
 import NavigationBar from "./components/NavigationBar.jsx";
 import CategoryCards from "./components/CategoryCards.jsx";
 import Goods from "./components/Goods.jsx";
+import StatusBar from "./components/StatusBar.jsx"
 import "./App.css";
 
 function App() {
 	return (
 		<div className="App">
-			<MenuNavigation />
+			<StatusBar />
 			<NavigationBar />
 			<Search />
 			<PromotionalBanner />
