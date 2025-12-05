@@ -50,11 +50,23 @@ body {
 	background-color: #7c7c7c;
 	margin-right: 5px;
 	font-size: 11px;
-	
 }
 
 .Card > img {
 	min-width: 66px;
 	min-height: 66px;
 	background-color: #333;
+}
+
+.Goods {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 169px 169px;
+}
+
+.Goods > div {
+	width: 169px;
+	height: 268px;
+	background-color: aqua;
+	border-radius: 20px;
 }

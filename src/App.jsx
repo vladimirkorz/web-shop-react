@@ -4,6 +4,7 @@ import PromotionalBanner from "./components/PromotionalBanner.jsx";
 import MenuNavigation from "./components/MenuNavigator.jsx";
 import NavigationBar from "./components/NavigationBar.jsx";
 import CategoryCards from "./components/CategoryCards.jsx";
+import Goods from "./components/Goods.jsx";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 			<Search />
 			<PromotionalBanner />
 			<CategoryCards />
+			<Goods />
 			<div className="main-content"></div>
 		</div>
 	);
