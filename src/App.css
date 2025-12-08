@@ -1,10 +1,3 @@
-:root {
-	--bg: #F1F1F1;
-	--button-color: #C6C6C64D;
-	--card-color: #FFFFFF;
-	--text:#292928;
-}
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -15,28 +8,9 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
 		sans-serif;
 	line-height: 1.6;
-	color: var(--text);
-	background-color: var(--bg);
+	color: #333;
+	background-color: #f5f5f5;
 	padding: 5px;
-}
-
-.StatusBar {
-	height: 55px;
-	display: flex;
-	justify-content: space-between;
-	padding: 15px;
-
-}
-
-.StatusBar div {
-	display: flex;
-	justify-content: space-between;
-	gap: 10px;
-
-}
-
-.StatusBar img {
-	max-height: 13px;
 }
 
 .navigationBar {
@@ -44,17 +18,11 @@ body {
 	justify-content: space-between;
 }
 
-.navigationBar button {
-	height: 30px;
-	color: var(--text);
-}
-
 .Search {
 	width: 100%;
 	height: 39px;
-	background-color: var(--card-color);
+	background-color: bisque;
 	border-radius: 20px;
-	border-width: 0;
 }
 
 .PromotionalBanner {
@@ -71,15 +39,15 @@ body {
 
 .CategoryCards {
 	display: flex;
-	overflow-x: auto;
+	overflow-x: min;
 	height: 100px;
-	background-color: var(--bg);
+	background-color: rgb(187, 187, 187);
 }
 
 .Card {
 	max-height: 80px;
 	min-width: 66px;
-	background-color: var(--card-color);
+	background-color: #7c7c7c;
 	margin-right: 5px;
 	font-size: 11px;
 }
@@ -87,36 +55,18 @@ body {
 .Card > img {
 	min-width: 66px;
 	min-height: 66px;
-	background-color: #ffb0b0;
+	background-color: #333;
 }
 
 .Goods {
 	display: grid;
-	gap: 5px;
-	grid-template-columns: 173px 173px;
+	gap: 10px;
+	grid-template-columns: 169px 169px;
 }
 
 .Goods > div {
-	width: 173px;
-	height: 268px;
-	background-color: rgb(255, 248, 248);
-	border-radius: 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 2px;
-}
-
-.Goods img {
-	height: 169px;
 	width: 169px;
+	height: 268px;
+	background-color: aqua;
 	border-radius: 20px;
-	background-color: #a5a5a5;
-}
-
-.Goods button {
-	width: 159px;
-	height: 34px;
-	color: var(--text);
-	margin: 5px;
 }

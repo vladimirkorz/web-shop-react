@@ -1,23 +1,31 @@
 import { useState } from "react";
 import Search from "./components/Search.jsx";
 import PromotionalBanner from "./components/PromotionalBanner.jsx";
+import MenuNavigation from "./components/MenuNavigator.jsx";
 import NavigationBar from "./components/NavigationBar.jsx";
 import CategoryCards from "./components/CategoryCards.jsx";
 import Goods from "./components/Goods.jsx";
-import StatusBar from "./components/StatusBar.jsx"
 import "./App.css";
 
 function App() {
+	if (10 > 5) {
+		PromotionalBanner.style.setProperty(display, none);
+	}
+	// нужно пользоваться useState и useEffect
 	return (
-		<div className="App">
-			<StatusBar />
-			<NavigationBar />
-			<Search />
-			<PromotionalBanner />
-			<CategoryCards />
-			<Goods />
-			<div className="main-content"></div>
-		</div>
+		<>
+			<div className="Baza">
+				<MenuNavigation />
+				<NavigationBar />
+				<Search />
+			</div>
+			<div className="popular">aboba, abiba</div>
+			<div className="App">
+				<PromotionalBanner />
+				<CategoryCards />
+				<Goods />
+			</div>
+		</>
 	);
 }
 
